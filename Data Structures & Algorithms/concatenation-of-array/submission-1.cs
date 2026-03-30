@@ -1,0 +1,10 @@
+public class Solution {
+    public int[] GetConcatenation(int[] nums) {
+        int n = nums.Length;
+        var ans = new int[n * 2];
+        for(int i = 0;i<n;i++) {
+            ans[i] = ans[i+n] = nums[i];
+        }
+        return ans;
+    }
+}
